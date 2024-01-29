@@ -45,6 +45,9 @@ body {
     font-weight: 600;
 }
 
+#xWin ,#oWin {
+    padding-top: 3px;
+}
 .grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -87,9 +90,9 @@ body {
 }
 
 .Back{
-    display: block;
-    text-align: end;
-    margin: 40px 25px 0 0;
+    display: flex;
+    margin: 0 20px;
+    text-decoration: none;
 }
 
 .back {
@@ -97,8 +100,9 @@ body {
     background-color: #FF2525;
     border: 0;
     color: rgb(242, 234, 234);
-    border-radius: 5px;
-    padding: 5px 10px;
+    border-radius: 10px;
+    padding: 5px 25px;
+    font-size: 15px;
 }
 
 .back:hover {
