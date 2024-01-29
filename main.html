@@ -4,31 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="mainStyle.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="container">
-    <h2>
-        Welcome!
-    </h2>
-
-    <div class="name">
-        <h1>Let's play together!</h1>
-    </div>
-
-    
-        <button class="tic">
-            <h1>Tic Tac Toe</h1>
-        </button><br>
-    
-
-    <a href="index.html">
-        <button class="play">
-            START
+    <a href="index.html" class="Back">
+        <button class="back">
+            Back to Main Page
         </button>
     </a>
+
+    <div>
+        <h1 class="heading">Tic Tac Toe</h1>
+    </div>
+    
+    <div class="score">
+        <div class="x">
+            <span>X</span>
+            <span id="xWin">0</span>
+        </div>
+        <div class="o">
+            <span>O</span>
+            <span id="oWin">0</span>
+        </div>
     </div>
 
+    <div class="grid">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    </div>
+
+    <h2 id="result"></h2>
+    <button id="reset" onclick="resetGame()">Reset</button>
 </body>
+
+<script src="game.js"></script>
 </html>
